@@ -4,8 +4,8 @@ import pandas as pd
 from sklearn.linear_model import LinearRegression
 
 # Read training and test data
-train_data = pd.read_csv('../../data/kc_house_train_data.csv')
-test_data = pd.read_csv('../../data/kc_house_test_data.csv')
+train_data = pd.read_csv('../../data/Week02/kc_house_train_data.csv')
+test_data = pd.read_csv('../../data/Week02/kc_house_test_data.csv')
 
 # Add new features to train data
 train_data['bedrooms_squared'] = train_data['bedrooms'] ** 2

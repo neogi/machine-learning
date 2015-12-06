@@ -4,8 +4,8 @@ import pandas as pd
 import multiple_regression_gradient_descent as mrgd
 
 # Read training and test data
-train_data = pd.read_csv('../../data/kc_house_train_data.csv')
-test_data = pd.read_csv('../../data/kc_house_test_data.csv')
+train_data = pd.read_csv('../../data/Week02/kc_house_train_data.csv')
+test_data = pd.read_csv('../../data/Week02/kc_house_test_data.csv')
 
 # Model 1
 # Prepare train and test data for gradient descent method
