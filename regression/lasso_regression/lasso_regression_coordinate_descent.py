@@ -1,5 +1,5 @@
 """
-Ridge Regression: y = w0*x0 + w1*x1 + w2*x2 + ... + wD*xD
+LASSO Regression: y = w0*x0 + w1*x1 + w2*x2 + ... + wD*xD
 Objective: Estimate w0, w1, w2 ... wD given x1, x2 ... xD and y
 where xN = input feature, x0 = 1.0
       y  = output
