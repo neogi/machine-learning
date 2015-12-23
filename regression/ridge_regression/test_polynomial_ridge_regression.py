@@ -34,8 +34,8 @@ i = True # Fit intercept
 t = 0.01 # Tolerance
 
 # Read training and test data
-train_data = pd.read_csv('../../data/Week04/kc_house_data.csv', dtype=dtype_dict)
-test_data = pd.read_csv('../../data/Week04/wk3_kc_house_test_data.csv', dtype=dtype_dict)
+train_data = pd.read_csv('../data/Week04/kc_house_data.csv', dtype=dtype_dict)
+test_data = pd.read_csv('../data/Week04/wk3_kc_house_test_data.csv', dtype=dtype_dict)
 train_data = train_data.sort(['sqft_living', 'price'])
 output = train_data['price']
 
@@ -63,10 +63,10 @@ print 'Ridge regression coefficients:'
 print model2.coef_
 
 # Read other datasets
-set_1 = pd.read_csv('../../data/Week04/wk3_kc_house_set_1_data.csv', dtype=dtype_dict)
-set_2 = pd.read_csv('../../data/Week04/wk3_kc_house_set_2_data.csv', dtype=dtype_dict)
-set_3 = pd.read_csv('../../data/Week04/wk3_kc_house_set_3_data.csv', dtype=dtype_dict)
-set_4 = pd.read_csv('../../data/Week04/wk3_kc_house_set_4_data.csv', dtype=dtype_dict)
+set_1 = pd.read_csv('../data/Week04/wk3_kc_house_set_1_data.csv', dtype=dtype_dict)
+set_2 = pd.read_csv('../data/Week04/wk3_kc_house_set_2_data.csv', dtype=dtype_dict)
+set_3 = pd.read_csv('../data/Week04/wk3_kc_house_set_3_data.csv', dtype=dtype_dict)
+set_4 = pd.read_csv('../data/Week04/wk3_kc_house_set_4_data.csv', dtype=dtype_dict)
 set_1 = set_1.sort(['sqft_living', 'price'])
 set_2 = set_2.sort(['sqft_living', 'price'])
 set_3 = set_3.sort(['sqft_living', 'price'])
@@ -124,7 +124,7 @@ print model2_set_1.coef_[0], model2_set_2.coef_[0], model2_set_3.coef_[0], model
 # Cross validation to select l2 penalty
 print 'Selecting best L2 penalty using 10 fold cross validation'
 MAX_POLYNOMIAL_DEGREE = 15
-train_valid_shuffled_data = pd.read_csv('../../data/Week04/wk3_kc_house_train_valid_shuffled.csv', dtype=dtype_dict)
+train_valid_shuffled_data = pd.read_csv('../data/Week04/wk3_kc_house_train_valid_shuffled.csv', dtype=dtype_dict)
 poly15_train_valid_shuffled_data = plr.polynomial_dataframe(train_valid_shuffled_data['sqft_living'], MAX_POLYNOMIAL_DEGREE)
 output = train_valid_shuffled_data['price']
 

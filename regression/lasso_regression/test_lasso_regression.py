@@ -35,7 +35,7 @@ dtype_dict = {'bathrooms':float, 'waterfront':int,
               'lat':float, 'date':str,
               'sqft_basement':int, 'yr_built':int,
               'id':str, 'sqft_lot':int, 'view':int}
-sales = pd.read_csv('../../data/Week05/kc_house_data.csv', dtype=dtype_dict)
+sales = pd.read_csv('../data/Week05/kc_house_data.csv', dtype=dtype_dict)
 all_features = ['bedrooms', 'bedrooms_square', 'bathrooms',
                 'sqft_living', 'sqft_living_sqrt', 'sqft_lot',
                 'sqft_lot_sqrt', 'floors', 'floors_square',
@@ -55,9 +55,9 @@ show_features(model_all)
 print ''
 
 # Read training and test data
-testing = pd.read_csv('../../data/Week05/wk3_kc_house_test_data.csv', dtype=dtype_dict)
-training = pd.read_csv('../../data/Week05/wk3_kc_house_train_data.csv', dtype=dtype_dict)
-validation = pd.read_csv('../../data/Week05/wk3_kc_house_valid_data.csv', dtype=dtype_dict)
+testing = pd.read_csv('../data/Week05/wk3_kc_house_test_data.csv', dtype=dtype_dict)
+training = pd.read_csv('../data/Week05/wk3_kc_house_train_data.csv', dtype=dtype_dict)
+validation = pd.read_csv('../data/Week05/wk3_kc_house_valid_data.csv', dtype=dtype_dict)
 
 # Add addtional features
 testing['sqft_living_sqrt'] = testing['sqft_living'].apply(sqrt)

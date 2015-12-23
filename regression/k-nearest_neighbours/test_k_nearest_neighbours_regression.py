@@ -13,9 +13,9 @@ dtype_dict = {'bathrooms':float, 'waterfront':int, 'sqft_above':int,
               'sqft_lot':int, 'view':int}
 
 # Read house sales data
-train = pd.read_csv('../../data/Week06/kc_house_data_small_train.csv', dtype=dtype_dict)
-valid = pd.read_csv('../../data/Week06/kc_house_data_validation.csv', dtype=dtype_dict)
-test = pd.read_csv('../../data/Week06/kc_house_data_small_test.csv', dtype=dtype_dict)
+train = pd.read_csv('../data/Week06/kc_house_data_small_train.csv', dtype=dtype_dict)
+valid = pd.read_csv('../data/Week06/kc_house_data_validation.csv', dtype=dtype_dict)
+test = pd.read_csv('../data/Week06/kc_house_data_small_test.csv', dtype=dtype_dict)
 # Feature list
 feature_list = ['bedrooms', 'bathrooms', 'sqft_living',
                 'sqft_lot', 'floors', 'waterfront',  

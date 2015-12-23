@@ -27,9 +27,9 @@ dtype_dict = {'bathrooms':float, 'waterfront':int,
               'sqft_basement':int, 'yr_built':int,
               'id':str, 'sqft_lot':int, 'view':int}
 
-train_data = pd.read_csv('../../data/Week03/wk3_kc_house_train_data.csv', dtype=dtype_dict)
-val_data = pd.read_csv('../../data/Week03/wk3_kc_house_valid_data.csv', dtype=dtype_dict)
-test_data = pd.read_csv('../../data/Week03/wk3_kc_house_test_data.csv', dtype=dtype_dict)
+train_data = pd.read_csv('../data/Week03/wk3_kc_house_train_data.csv', dtype=dtype_dict)
+val_data = pd.read_csv('../data/Week03/wk3_kc_house_valid_data.csv', dtype=dtype_dict)
+test_data = pd.read_csv('../data/Week03/wk3_kc_house_test_data.csv', dtype=dtype_dict)
 
 train_data = train_data.sort(['sqft_living'])
 val_data = val_data.sort(['sqft_living'])
@@ -45,10 +45,10 @@ model1.fit(poly1_data, output)
 plot_fit(model1, poly1_data, output)
 
 # Read other dataset
-set_1 = pd.read_csv('../../data/Week03/wk3_kc_house_set_1_data.csv', dtype=dtype_dict)
-set_2 = pd.read_csv('../../data/Week03/wk3_kc_house_set_2_data.csv', dtype=dtype_dict)
-set_3 = pd.read_csv('../../data/Week03/wk3_kc_house_set_3_data.csv', dtype=dtype_dict)
-set_4 = pd.read_csv('../../data/Week03/wk3_kc_house_set_4_data.csv', dtype=dtype_dict)
+set_1 = pd.read_csv('../data/Week03/wk3_kc_house_set_1_data.csv', dtype=dtype_dict)
+set_2 = pd.read_csv('../data/Week03/wk3_kc_house_set_2_data.csv', dtype=dtype_dict)
+set_3 = pd.read_csv('../data/Week03/wk3_kc_house_set_3_data.csv', dtype=dtype_dict)
+set_4 = pd.read_csv('../data/Week03/wk3_kc_house_set_4_data.csv', dtype=dtype_dict)
 set_1 = set_1.sort(['sqft_living', 'price'])
 set_2 = set_2.sort(['sqft_living', 'price'])
 set_3 = set_3.sort(['sqft_living', 'price'])

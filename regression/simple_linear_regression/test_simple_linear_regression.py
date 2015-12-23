@@ -5,8 +5,8 @@ import simple_linear_regression as slr
 import matplotlib.pyplot as plt
 
 # Read training and test data
-train_data = pd.read_csv('../../data/Week01/kc_house_train_data.csv')
-test_data = pd.read_csv('../../data/Week01/kc_house_test_data.csv')
+train_data = pd.read_csv('../data/Week01/kc_house_train_data.csv')
+test_data = pd.read_csv('../data/Week01/kc_house_test_data.csv')
 
 # Extract train input feature and output
 input_feature_sqft = np.array(train_data['sqft_living'])

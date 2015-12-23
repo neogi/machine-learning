@@ -17,8 +17,8 @@ dtype_dict = {'bathrooms':float, 'waterfront':int,
               'id':str, 'sqft_lot':int, 'view':int}
 
 # Read training and test data
-train_data = pd.read_csv('../../data/Week04/kc_house_train_data.csv', dtype=dtype_dict)
-test_data = pd.read_csv('../../data/Week04/kc_house_test_data.csv', dtype=dtype_dict)
+train_data = pd.read_csv('../data/Week04/kc_house_train_data.csv', dtype=dtype_dict)
+test_data = pd.read_csv('../data/Week04/kc_house_test_data.csv', dtype=dtype_dict)
 
 # Simple model - one feature
 features = ['sqft_living']

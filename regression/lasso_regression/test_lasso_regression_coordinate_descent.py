@@ -33,7 +33,7 @@ dtype_dict = {'bathrooms':float, 'waterfront':int, 'sqft_above':int,
               'sqft_lot':int, 'view':int}
 
 # Read house sales data
-sales = pd.read_csv('../../data/Week05/kc_house_data.csv', dtype=dtype_dict)
+sales = pd.read_csv('../data/Week05/kc_house_data.csv', dtype=dtype_dict)
 # Select features and ouput
 features = ['sqft_living', 'bedrooms']
 target = ['price']
@@ -50,8 +50,8 @@ model = lasso.fit(norm_feature_matrix, output, init_weights, l1_penalty, toleran
 RSS = lasso.get_residual_sum_of_squares(norm_feature_matrix, model, output)
 
 # Read house sales train and test data
-train_data = pd.read_csv('../../data/Week05/kc_house_train_data.csv', dtype=dtype_dict)
-test_data = pd.read_csv('../../data/Week05/kc_house_test_data.csv', dtype=dtype_dict)
+train_data = pd.read_csv('../data/Week05/kc_house_train_data.csv', dtype=dtype_dict)
+test_data = pd.read_csv('../data/Week05/kc_house_test_data.csv', dtype=dtype_dict)
 # Select features and output
 features = ['bedrooms', 'bathrooms', 'sqft_living', 'sqft_lot',
             'floors', 'waterfront', 'view', 'condition', 'grade',
